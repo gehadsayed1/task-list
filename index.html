@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="stily.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Add Your Task Here</h1>
+      <div class="task-input">
+        <div class="but">
+          <button class="file">
+            <input type="file" id="imageInput" />Upload
+          </button>
+          <button class="add" onclick="addTask()">Add</button>
+        </div>
+        <div class="inp">
+          <input type="text" id="taskInput" placeholder="Add new task..." />
+        </div>
+      </div>
+      <ul id="taskList"></ul>
+      <button id="deleteAllButton" onclick="deleteAllTasks()">
+        Delete All
+      </button>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
